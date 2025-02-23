@@ -6,10 +6,11 @@ public class Contador {
 
         Scanner scanner = new Scanner(System.in).useLocale(Locale.US);
 
-        System.out.println("Digite o primeiro número:");
+        System.out.print("Digite o primeiro número: ");
         int parametroUm = scanner.nextInt();
-        System.out.println("Digite o segundo número:");
+        System.out.print("Digite o segundo número: ");
         int parametroDois = scanner.nextInt();
+        System.out.println();
 
         try {
             contar (parametroUm, parametroDois);
@@ -31,7 +32,7 @@ public class Contador {
         int contagem = parametroDois - parametroUm;
 
         for (int indice = 0; indice < contagem; indice++) {
-            System.out.println("Número: " + (indice + 1));
+            System.out.println("Imprimindo o número " + (indice + 1));
         }
     }
 }
